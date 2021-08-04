@@ -1,5 +1,5 @@
 # Source
-This repository is created to document and publish the Source module that is being created as part of the ontology network of Polifonia. 
+The Source ontology module models concepts and relationships for representing sources of (music-related) information.
 
 # Links
 The Source module is necessary to address the stories below:
