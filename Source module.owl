@@ -1,0 +1,443 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/"
+     xml:base="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25">
+        <rdfs:comment>Created by Fiorela Ciroku</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/hasAgent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/hasAgent">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isAgentOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/AgentRole"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Agent"/>
+        <rdfs:comment xml:lang="en">This property relates a situation in which an agent holds a role to that agent.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasAgent</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/hasAgentRole -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/hasAgentRole">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isAgentRoleOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Source"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/AgentRole"/>
+        <rdfs:comment xml:lang="en">This property relates an entity to a situation in which an agent holds a role connected to that entity.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasAgentRole</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/hasContextOfProduction -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/hasContextOfProduction">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isContextOfProductionOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Source"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/ContextOfProduction"/>
+        <rdfs:label xml:lang="en">hasContextOfProduction</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/hasContextOfUsage -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/hasContextOfUsage">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isContextOfUsageOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Source"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/ContextOfUsage"/>
+        <rdfs:label xml:lang="en">hasContextOfUsage</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/hasGoal -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/hasGoal">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isGoalOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Source"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Goal"/>
+        <rdfs:label xml:lang="en">hasGoal</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/hasPlace -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/hasPlace">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isPlaceOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Source"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Place"/>
+        <rdfs:label xml:lang="en">hasPlace</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/hasRole -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/hasRole">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isRoleOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/AgentRole"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Role"/>
+        <rdfs:comment xml:lang="en">This property relates a situation in which an agent holds a role to that role.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasRole</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/hasSourceCreator -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/hasSourceCreator">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isSourceCreatorOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Source"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Agent"/>
+        <rdfs:label xml:lang="en">hasSourceCreator</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/hasSourceCredibility -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/hasSourceCredibility">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isSourceCredibilityOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Source"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/SourceCredibility"/>
+        <rdfs:label xml:lang="en">hasSourceCredibility</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/hasSubject -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/hasSubject">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isSubjectOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Source"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Subject"/>
+        <rdfs:label xml:lang="en">hasSubject</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/hasTimeInterval -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/hasTimeInterval">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isTimeIntervalOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Source"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/TimeInterval"/>
+        <rdfs:comment xml:lang="en">The generic relation between events and time intervals.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasTimeInterval</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/hasType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/hasType">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isTypeOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Source"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/SourceType"/>
+        <rdfs:label xml:lang="en">hasType</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isAgentOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isAgentOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Agent"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/AgentRole"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isAgentRoleOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isAgentRoleOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/AgentRole"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Source"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isContextOfProductionOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isContextOfProductionOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/ContextOfProduction"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Source"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isContextOfUsageOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isContextOfUsageOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/ContextOfUsage"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Source"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isGoalOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isGoalOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Goal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Source"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isPlaceOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isPlaceOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Place"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Source"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isRelatedTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isRelatedTo">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Source"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Source"/>
+        <rdfs:label xml:lang="en">isRelatedTo</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isRoleOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isRoleOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Role"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/AgentRole"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isSourceCreatorOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isSourceCreatorOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Agent"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Source"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isSourceCredibilityOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isSourceCredibilityOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/SourceCredibility"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Source"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isSubjectOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isSubjectOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Subject"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Source"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isTimeIntervalOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isTimeIntervalOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/TimeInterval"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Source"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isTypeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isTypeOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/SourceType"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Source"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isSubjectRelatedTo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isSubjectRelatedTo">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Subject"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">isSubjectRelatedTo</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Agent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Agent">
+        <rdfs:comment xml:lang="en">Any agentive Object , either physical (e.g. a whale, a robot, an oak), or social (e.g. a corporation, an institution, a community).</rdfs:comment>
+        <rdfs:label xml:lang="en">Agent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/AgentRole -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/AgentRole">
+        <rdfs:comment xml:lang="en">This class represents a situation in which an agent holds a role, regardless of the timing.</rdfs:comment>
+        <rdfs:label xml:lang="en">AgentRole</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/ContextOfProduction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/ContextOfProduction">
+        <rdfs:label xml:lang="en">ContextOfProduction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/ContextOfUsage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/ContextOfUsage">
+        <rdfs:label xml:lang="en">ContextOfUsage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Goal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Goal">
+        <rdfs:comment xml:lang="en">The Description of a Situation that is desired by an Agent, and usually associated to a Plan that describes how to actually achieve it.</rdfs:comment>
+        <rdfs:label xml:lang="en">Goal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Place -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Place">
+        <rdfs:comment xml:lang="en">Socially or cognitively dependent locations: political geographic entities (Rome, Lesotho), and non-material locations determined by the presence of other entities (&quot;the area close to Rome&quot;) or of pivot events or signs (&quot;the area where the helicopter fell&quot;), as well as identified as complements to other entities (&quot;the area under the table&quot;), etc.</rdfs:comment>
+        <rdfs:label xml:lang="en">Place</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Role -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Role">
+        <rdfs:comment xml:lang="en">A Concept that classifies an Object.</rdfs:comment>
+        <rdfs:label xml:lang="en">Role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Source -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Source">
+        <rdfs:label xml:lang="en">Source</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/SourceCredibility -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/SourceCredibility">
+        <rdfs:label xml:lang="en">SourceCredibility</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/SourceType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/SourceType">
+        <rdfs:comment xml:lang="en">The nature or genre of the resource.</rdfs:comment>
+        <rdfs:label xml:lang="en">SourceType</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Subject -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Subject">
+        <rdfs:label xml:lang="en">Subject</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/TimeInterval -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/TimeInterval">
+        <rdfs:comment xml:lang="en">Any Region in a dimensional space that aims at representing time.</rdfs:comment>
+        <rdfs:label xml:lang="en">TimeInterval</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
