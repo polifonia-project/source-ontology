@@ -3,10 +3,15 @@
      xml:base="https://w3id.org/polifonia/ON/source/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:src="https://w3id.org/polifonia/ON/source/0.0.1#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:core="https://w3id.org/polifonia/ON/core/0.0.1#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="https://w3id.org/polifonia/ON/source/">
+        <owl:versionIRI rdf:resource="https://w3id.org/polifonia/ON/source/0.0.1"/>
+        <rdfs:comment xml:lang="en">This is the ontology Source of the Polifonia ontology network.</rdfs:comment>
+        <rdfs:label xml:lang="en">Source ontology (Polifonia ontology network)</rdfs:label>
     </owl:Ontology>
     
 
@@ -22,282 +27,278 @@
     
 
 
-    <!-- http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/hasAgent -->
+    <!-- http://w3id.org/polifonia/ON/source/hasAgent -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/hasAgent">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isAgentOf"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/AgentRole"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Agent"/>
+    <owl:ObjectProperty rdf:about="http://w3id.org/polifonia/ON/source/hasAgent">
+        <owl:inverseOf rdf:resource="http://w3id.org/polifonia/ON/source/isAgentOf"/>
+        <rdfs:domain rdf:resource="http://w3id.org/polifonia/ON/source/AgentRole"/>
+        <rdfs:range rdf:resource="http://w3id.org/polifonia/ON/source/Agent"/>
         <rdfs:comment xml:lang="en">This property relates a situation in which an agent holds a role to that agent.</rdfs:comment>
-        <rdfs:label xml:lang="en">hasAgent</rdfs:label>
+        <rdfs:label xml:lang="en">has agent</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/hasAgentRole -->
+    <!-- http://w3id.org/polifonia/ON/source/hasAgentRole -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/hasAgentRole">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isAgentRoleOf"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Source"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/AgentRole"/>
+    <owl:ObjectProperty rdf:about="http://w3id.org/polifonia/ON/source/hasAgentRole">
+        <owl:inverseOf rdf:resource="http://w3id.org/polifonia/ON/source/isAgentRoleOf"/>
+        <rdfs:domain rdf:resource="http://w3id.org/polifonia/ON/source/Source"/>
+        <rdfs:range rdf:resource="http://w3id.org/polifonia/ON/source/AgentRole"/>
         <rdfs:comment xml:lang="en">This property relates an entity to a situation in which an agent holds a role connected to that entity.</rdfs:comment>
-        <rdfs:label xml:lang="en">hasAgentRole</rdfs:label>
+        <rdfs:label xml:lang="en">has agent role</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/hasContextOfProduction -->
+    <!-- http://w3id.org/polifonia/ON/source/hasContextOfProduction -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/hasContextOfProduction">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isContextOfProductionOf"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Source"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/ContextOfProduction"/>
-        <rdfs:label xml:lang="en">hasContextOfProduction</rdfs:label>
+    <owl:ObjectProperty rdf:about="http://w3id.org/polifonia/ON/source/hasContextOfProduction">
+        <owl:inverseOf rdf:resource="http://w3id.org/polifonia/ON/source/isContextOfProductionOf"/>
+        <rdfs:domain rdf:resource="http://w3id.org/polifonia/ON/source/Source"/>
+        <rdfs:range rdf:resource="http://w3id.org/polifonia/ON/source/ContextOfProduction"/>
+        <rdfs:label xml:lang="en">has context of production</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/hasContextOfUsage -->
+    <!-- http://w3id.org/polifonia/ON/source/hasContextOfUsage -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/hasContextOfUsage">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isContextOfUsageOf"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Source"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/ContextOfUsage"/>
-        <rdfs:label xml:lang="en">hasContextOfUsage</rdfs:label>
+    <owl:ObjectProperty rdf:about="http://w3id.org/polifonia/ON/source/hasContextOfUsage">
+        <owl:inverseOf rdf:resource="http://w3id.org/polifonia/ON/source/isContextOfUsageOf"/>
+        <rdfs:domain rdf:resource="http://w3id.org/polifonia/ON/source/Source"/>
+        <rdfs:range rdf:resource="http://w3id.org/polifonia/ON/source/ContextOfUsage"/>
+        <rdfs:label xml:lang="en">has context of usage</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/hasGoal -->
+    <!-- http://w3id.org/polifonia/ON/source/hasGoal -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/hasGoal">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isGoalOf"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Source"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Goal"/>
-        <rdfs:label xml:lang="en">hasGoal</rdfs:label>
+    <owl:ObjectProperty rdf:about="http://w3id.org/polifonia/ON/source/hasGoal">
+        <owl:inverseOf rdf:resource="http://w3id.org/polifonia/ON/source/isGoalOf"/>
+        <rdfs:domain rdf:resource="http://w3id.org/polifonia/ON/source/Source"/>
+        <rdfs:range rdf:resource="http://w3id.org/polifonia/ON/source/Goal"/>
+        <rdfs:label xml:lang="en">has goal</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/hasPlace -->
+    <!-- http://w3id.org/polifonia/ON/source/hasPlace -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/hasPlace">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isPlaceOf"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Source"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Place"/>
-        <rdfs:label xml:lang="en">hasPlace</rdfs:label>
+    <owl:ObjectProperty rdf:about="http://w3id.org/polifonia/ON/source/hasPlace">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/polifonia/ON/core/hasPlace"/>
+        <owl:inverseOf rdf:resource="http://w3id.org/polifonia/ON/source/isPlaceOf"/>
+        <rdfs:domain rdf:resource="http://w3id.org/polifonia/ON/source/Source"/>
+        <rdfs:range rdf:resource="http://w3id.org/polifonia/ON/source/Place"/>
+        <rdfs:label xml:lang="en">has place</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/hasRole -->
+    <!-- http://w3id.org/polifonia/ON/source/hasRole -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/hasRole">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isRoleOf"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/AgentRole"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Role"/>
+    <owl:ObjectProperty rdf:about="http://w3id.org/polifonia/ON/source/hasRole">
+        <owl:inverseOf rdf:resource="http://w3id.org/polifonia/ON/source/isRoleOf"/>
+        <rdfs:domain rdf:resource="http://w3id.org/polifonia/ON/source/AgentRole"/>
+        <rdfs:range rdf:resource="http://w3id.org/polifonia/ON/source/Role"/>
         <rdfs:comment xml:lang="en">This property relates a situation in which an agent holds a role to that role.</rdfs:comment>
-        <rdfs:label xml:lang="en">hasRole</rdfs:label>
+        <rdfs:label xml:lang="en">has role</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/hasSourceCreator -->
+    <!-- http://w3id.org/polifonia/ON/source/hasSourceCredibility -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/hasSourceCreator">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isSourceCreatorOf"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Source"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Agent"/>
-        <rdfs:label xml:lang="en">hasSourceCreator</rdfs:label>
+    <owl:ObjectProperty rdf:about="http://w3id.org/polifonia/ON/source/hasSourceCredibility">
+        <owl:inverseOf rdf:resource="http://w3id.org/polifonia/ON/source/isSourceCredibilityOf"/>
+        <rdfs:domain rdf:resource="http://w3id.org/polifonia/ON/source/Source"/>
+        <rdfs:range rdf:resource="http://w3id.org/polifonia/ON/source/SourceCredibility"/>
+        <rdfs:label xml:lang="en">has source credibility</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/hasSourceCredibility -->
+    <!-- http://w3id.org/polifonia/ON/source/hasSubject -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/hasSourceCredibility">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isSourceCredibilityOf"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Source"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/SourceCredibility"/>
-        <rdfs:label xml:lang="en">hasSourceCredibility</rdfs:label>
+    <owl:ObjectProperty rdf:about="http://w3id.org/polifonia/ON/source/hasSubject">
+        <owl:inverseOf rdf:resource="http://w3id.org/polifonia/ON/source/isSubjectOf"/>
+        <rdfs:domain rdf:resource="http://w3id.org/polifonia/ON/source/Source"/>
+        <rdfs:range rdf:resource="http://w3id.org/polifonia/ON/source/Subject"/>
+        <rdfs:label xml:lang="en">has subject</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/hasSubject -->
+    <!-- http://w3id.org/polifonia/ON/source/hasTimeInterval -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/hasSubject">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isSubjectOf"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Source"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Subject"/>
-        <rdfs:label xml:lang="en">hasSubject</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/hasTimeInterval -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/hasTimeInterval">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isTimeIntervalOf"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Source"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/TimeInterval"/>
+    <owl:ObjectProperty rdf:about="http://w3id.org/polifonia/ON/source/hasTimeInterval">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/polifonia/ON/core/hasTimeInterval"/>
+        <owl:inverseOf rdf:resource="http://w3id.org/polifonia/ON/source/isTimeIntervalOf"/>
+        <rdfs:domain rdf:resource="http://w3id.org/polifonia/ON/source/Source"/>
+        <rdfs:range rdf:resource="http://w3id.org/polifonia/ON/source/TimeInterval"/>
         <rdfs:comment xml:lang="en">The generic relation between events and time intervals.</rdfs:comment>
-        <rdfs:label xml:lang="en">hasTimeInterval</rdfs:label>
+        <rdfs:label xml:lang="en">has time interval</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/hasType -->
+    <!-- http://w3id.org/polifonia/ON/source/hasType -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/hasType">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isTypeOf"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Source"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/SourceType"/>
-        <rdfs:label xml:lang="en">hasType</rdfs:label>
+    <owl:ObjectProperty rdf:about="http://w3id.org/polifonia/ON/source/hasType">
+        <owl:inverseOf rdf:resource="http://w3id.org/polifonia/ON/source/isTypeOf"/>
+        <rdfs:domain rdf:resource="http://w3id.org/polifonia/ON/source/Source"/>
+        <rdfs:range rdf:resource="http://w3id.org/polifonia/ON/source/SourceType"/>
+        <rdfs:label xml:lang="en">has type</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isAgentOf -->
+    <!-- http://w3id.org/polifonia/ON/source/isAgentOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isAgentOf">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Agent"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/AgentRole"/>
+    <owl:ObjectProperty rdf:about="http://w3id.org/polifonia/ON/source/isAgentOf">
+        <rdfs:domain rdf:resource="http://w3id.org/polifonia/ON/source/Agent"/>
+        <rdfs:range rdf:resource="http://w3id.org/polifonia/ON/source/AgentRole"/>
+        <rdfs:label xml:lang="en">is agent of</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isAgentRoleOf -->
+    <!-- http://w3id.org/polifonia/ON/source/isAgentRoleOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isAgentRoleOf">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/AgentRole"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Source"/>
+    <owl:ObjectProperty rdf:about="http://w3id.org/polifonia/ON/source/isAgentRoleOf">
+        <rdfs:domain rdf:resource="http://w3id.org/polifonia/ON/source/AgentRole"/>
+        <rdfs:range rdf:resource="http://w3id.org/polifonia/ON/source/Source"/>
+        <rdfs:label xml:lang="en">is agent role of</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isContextOfProductionOf -->
+    <!-- http://w3id.org/polifonia/ON/source/isContextOfProductionOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isContextOfProductionOf">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/ContextOfProduction"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Source"/>
+    <owl:ObjectProperty rdf:about="http://w3id.org/polifonia/ON/source/isContextOfProductionOf">
+        <rdfs:domain rdf:resource="http://w3id.org/polifonia/ON/source/ContextOfProduction"/>
+        <rdfs:range rdf:resource="http://w3id.org/polifonia/ON/source/Source"/>
+        <rdfs:label xml:lang="en">is context of production of</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isContextOfUsageOf -->
+    <!-- http://w3id.org/polifonia/ON/source/isContextOfUsageOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isContextOfUsageOf">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/ContextOfUsage"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Source"/>
+    <owl:ObjectProperty rdf:about="http://w3id.org/polifonia/ON/source/isContextOfUsageOf">
+        <rdfs:domain rdf:resource="http://w3id.org/polifonia/ON/source/ContextOfUsage"/>
+        <rdfs:range rdf:resource="http://w3id.org/polifonia/ON/source/Source"/>
+        <rdfs:label xml:lang="en">is context of usage of</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isGoalOf -->
+    <!-- http://w3id.org/polifonia/ON/source/isGoalOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isGoalOf">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Goal"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Source"/>
+    <owl:ObjectProperty rdf:about="http://w3id.org/polifonia/ON/source/isGoalOf">
+        <rdfs:domain rdf:resource="http://w3id.org/polifonia/ON/source/Goal"/>
+        <rdfs:range rdf:resource="http://w3id.org/polifonia/ON/source/Source"/>
+        <rdfs:label xml:lang="en">is goal of</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isPlaceOf -->
+    <!-- http://w3id.org/polifonia/ON/source/isPlaceOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isPlaceOf">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Place"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Source"/>
+    <owl:ObjectProperty rdf:about="http://w3id.org/polifonia/ON/source/isPlaceOf">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/polifonia/ON/core/isPlaceOf"/>
+        <rdfs:domain rdf:resource="http://w3id.org/polifonia/ON/source/Place"/>
+        <rdfs:range rdf:resource="http://w3id.org/polifonia/ON/source/Source"/>
+        <rdfs:label xml:lang="en">is place of</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isRelatedTo -->
+    <!-- http://w3id.org/polifonia/ON/source/isRelatedTo -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isRelatedTo">
+    <owl:ObjectProperty rdf:about="http://w3id.org/polifonia/ON/source/isRelatedTo">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Source"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Source"/>
+        <rdfs:domain rdf:resource="http://w3id.org/polifonia/ON/source/Source"/>
+        <rdfs:range rdf:resource="http://w3id.org/polifonia/ON/source/Source"/>
+        <rdfs:label xml:lang="en">is related to</rdfs:label>
         <rdfs:label xml:lang="en">isRelatedTo</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isRoleOf -->
+    <!-- http://w3id.org/polifonia/ON/source/isRoleOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isRoleOf">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Role"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/AgentRole"/>
+    <owl:ObjectProperty rdf:about="http://w3id.org/polifonia/ON/source/isRoleOf">
+        <rdfs:domain rdf:resource="http://w3id.org/polifonia/ON/source/Role"/>
+        <rdfs:range rdf:resource="http://w3id.org/polifonia/ON/source/AgentRole"/>
+        <rdfs:label xml:lang="en">is role of</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isSourceCreatorOf -->
+    <!-- http://w3id.org/polifonia/ON/source/isSourceCredibilityOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isSourceCreatorOf">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Agent"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Source"/>
+    <owl:ObjectProperty rdf:about="http://w3id.org/polifonia/ON/source/isSourceCredibilityOf">
+        <rdfs:domain rdf:resource="http://w3id.org/polifonia/ON/source/SourceCredibility"/>
+        <rdfs:range rdf:resource="http://w3id.org/polifonia/ON/source/Source"/>
+        <rdfs:label xml:lang="en">is source credibility of</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isSourceCredibilityOf -->
+    <!-- http://w3id.org/polifonia/ON/source/isSubjectOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isSourceCredibilityOf">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/SourceCredibility"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Source"/>
+    <owl:ObjectProperty rdf:about="http://w3id.org/polifonia/ON/source/isSubjectOf">
+        <rdfs:domain rdf:resource="http://w3id.org/polifonia/ON/source/Subject"/>
+        <rdfs:range rdf:resource="http://w3id.org/polifonia/ON/source/Source"/>
+        <rdfs:label xml:lang="en">is subject of</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isSubjectOf -->
+    <!-- http://w3id.org/polifonia/ON/source/isTimeIntervalOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isSubjectOf">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Subject"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Source"/>
+    <owl:ObjectProperty rdf:about="http://w3id.org/polifonia/ON/source/isTimeIntervalOf">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/polifonia/ON/core/isTimeIntervalOf"/>
+        <rdfs:domain rdf:resource="http://w3id.org/polifonia/ON/source/TimeInterval"/>
+        <rdfs:range rdf:resource="http://w3id.org/polifonia/ON/source/Source"/>
+        <rdfs:label xml:lang="en">is time interval of</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isTimeIntervalOf -->
+    <!-- http://w3id.org/polifonia/ON/source/isTypeOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isTimeIntervalOf">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/TimeInterval"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Source"/>
+    <owl:ObjectProperty rdf:about="http://w3id.org/polifonia/ON/source/isTypeOf">
+        <rdfs:domain rdf:resource="http://w3id.org/polifonia/ON/source/SourceType"/>
+        <rdfs:range rdf:resource="http://w3id.org/polifonia/ON/source/Source"/>
+        <rdfs:label xml:lang="en">is type of</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isTypeOf -->
+    <!-- https://w3id.org/polifonia/ON/core/hasPlace -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isTypeOf">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/SourceType"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Source"/>
-    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="https://w3id.org/polifonia/ON/core/hasPlace"/>
+    
+
+
+    <!-- https://w3id.org/polifonia/ON/core/hasTimeInterval -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/polifonia/ON/core/hasTimeInterval"/>
+    
+
+
+    <!-- https://w3id.org/polifonia/ON/core/isPlaceOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/polifonia/ON/core/isPlaceOf"/>
+    
+
+
+    <!-- https://w3id.org/polifonia/ON/core/isTimeIntervalOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/polifonia/ON/core/isTimeIntervalOf"/>
     
 
 
@@ -312,13 +313,13 @@
     
 
 
-    <!-- http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isSubjectRelatedTo -->
+    <!-- http://w3id.org/polifonia/ON/source/isSubjectRelatedTo -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/isSubjectRelatedTo">
+    <owl:DatatypeProperty rdf:about="http://w3id.org/polifonia/ON/source/isSubjectRelatedTo">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Subject"/>
+        <rdfs:domain rdf:resource="http://w3id.org/polifonia/ON/source/Subject"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label xml:lang="en">isSubjectRelatedTo</rdfs:label>
+        <rdfs:label xml:lang="en">is subject related to</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -334,106 +335,134 @@
     
 
 
-    <!-- http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Agent -->
+    <!-- http://w3id.org/polifonia/ON/source/Agent -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Agent">
+    <owl:Class rdf:about="http://w3id.org/polifonia/ON/source/Agent">
+        <owl:equivalentClass rdf:resource="https://w3id.org/polifonia/ON/core/Agent"/>
         <rdfs:comment xml:lang="en">Any agentive Object , either physical (e.g. a whale, a robot, an oak), or social (e.g. a corporation, an institution, a community).</rdfs:comment>
         <rdfs:label xml:lang="en">Agent</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/AgentRole -->
+    <!-- http://w3id.org/polifonia/ON/source/AgentRole -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/AgentRole">
+    <owl:Class rdf:about="http://w3id.org/polifonia/ON/source/AgentRole">
         <rdfs:comment xml:lang="en">This class represents a situation in which an agent holds a role, regardless of the timing.</rdfs:comment>
         <rdfs:label xml:lang="en">AgentRole</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/ContextOfProduction -->
+    <!-- http://w3id.org/polifonia/ON/source/ContextOfProduction -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/ContextOfProduction">
-        <rdfs:label xml:lang="en">ContextOfProduction</rdfs:label>
+    <owl:Class rdf:about="http://w3id.org/polifonia/ON/source/ContextOfProduction">
+        <rdfs:label xml:lang="en">Context Of Production</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/ContextOfUsage -->
+    <!-- http://w3id.org/polifonia/ON/source/ContextOfUsage -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/ContextOfUsage">
-        <rdfs:label xml:lang="en">ContextOfUsage</rdfs:label>
+    <owl:Class rdf:about="http://w3id.org/polifonia/ON/source/ContextOfUsage">
+        <rdfs:label xml:lang="en">Context Of Usage</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Goal -->
+    <!-- http://w3id.org/polifonia/ON/source/Goal -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Goal">
+    <owl:Class rdf:about="http://w3id.org/polifonia/ON/source/Goal">
         <rdfs:comment xml:lang="en">The Description of a Situation that is desired by an Agent, and usually associated to a Plan that describes how to actually achieve it.</rdfs:comment>
         <rdfs:label xml:lang="en">Goal</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Place -->
+    <!-- http://w3id.org/polifonia/ON/source/Place -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Place">
+    <owl:Class rdf:about="http://w3id.org/polifonia/ON/source/Place">
+        <owl:equivalentClass rdf:resource="https://w3id.org/polifonia/ON/core/Place"/>
         <rdfs:comment xml:lang="en">Socially or cognitively dependent locations: political geographic entities (Rome, Lesotho), and non-material locations determined by the presence of other entities (&quot;the area close to Rome&quot;) or of pivot events or signs (&quot;the area where the helicopter fell&quot;), as well as identified as complements to other entities (&quot;the area under the table&quot;), etc.</rdfs:comment>
         <rdfs:label xml:lang="en">Place</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Role -->
+    <!-- http://w3id.org/polifonia/ON/source/Role -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Role">
+    <owl:Class rdf:about="http://w3id.org/polifonia/ON/source/Role">
+        <owl:equivalentClass rdf:resource="https://w3id.org/polifonia/ON/core/Role"/>
         <rdfs:comment xml:lang="en">A Concept that classifies an Object.</rdfs:comment>
         <rdfs:label xml:lang="en">Role</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Source -->
+    <!-- http://w3id.org/polifonia/ON/source/Source -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Source">
+    <owl:Class rdf:about="http://w3id.org/polifonia/ON/source/Source">
         <rdfs:label xml:lang="en">Source</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/SourceCredibility -->
+    <!-- http://w3id.org/polifonia/ON/source/SourceCredibility -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/SourceCredibility">
-        <rdfs:label xml:lang="en">SourceCredibility</rdfs:label>
+    <owl:Class rdf:about="http://w3id.org/polifonia/ON/source/SourceCredibility">
+        <rdfs:label xml:lang="en">Source Credibility</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/SourceType -->
+    <!-- http://w3id.org/polifonia/ON/source/SourceType -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/SourceType">
+    <owl:Class rdf:about="http://w3id.org/polifonia/ON/source/SourceType">
         <rdfs:comment xml:lang="en">The nature or genre of the resource.</rdfs:comment>
-        <rdfs:label xml:lang="en">SourceType</rdfs:label>
+        <rdfs:label xml:lang="en">Source Type</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Subject -->
+    <!-- http://w3id.org/polifonia/ON/source/Subject -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/Subject">
+    <owl:Class rdf:about="http://w3id.org/polifonia/ON/source/Subject">
         <rdfs:label xml:lang="en">Subject</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/TimeInterval -->
+    <!-- http://w3id.org/polifonia/ON/source/TimeInterval -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/fiore/ontologies/2021/7/untitled-ontology-25/TimeInterval">
+    <owl:Class rdf:about="http://w3id.org/polifonia/ON/source/TimeInterval">
+        <owl:equivalentClass rdf:resource="https://w3id.org/polifonia/ON/core/TimeInterval"/>
         <rdfs:comment xml:lang="en">Any Region in a dimensional space that aims at representing time.</rdfs:comment>
-        <rdfs:label xml:lang="en">TimeInterval</rdfs:label>
+        <rdfs:label xml:lang="en">Time Interval</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- https://w3id.org/polifonia/ON/core/Agent -->
+
+    <owl:Class rdf:about="https://w3id.org/polifonia/ON/core/Agent"/>
+    
+
+
+    <!-- https://w3id.org/polifonia/ON/core/Place -->
+
+    <owl:Class rdf:about="https://w3id.org/polifonia/ON/core/Place"/>
+    
+
+
+    <!-- https://w3id.org/polifonia/ON/core/Role -->
+
+    <owl:Class rdf:about="https://w3id.org/polifonia/ON/core/Role"/>
+    
+
+
+    <!-- https://w3id.org/polifonia/ON/core/TimeInterval -->
+
+    <owl:Class rdf:about="https://w3id.org/polifonia/ON/core/TimeInterval"/>
 </rdf:RDF>
 
 
