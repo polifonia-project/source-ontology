@@ -3,7 +3,7 @@ The Source ontology module of the [Polifonia ontology network](https://github.co
 
 ![Source module diagram](https://github.com/polifonia-project/source/blob/main/source-module-diagram.png)
 
-# Links
+## Links
 The Source module is necessary to address the stories below:
 - [Carolina#1 - Sources cross analysis](https://github.com/polifonia-project/stories/blob/main/Carolina:%20Music%20Historian/Carolina%20-%20Sources%20cross%20analysis.md)
 - [Keoma#1_- Restoration and sound practices](https://github.com/polifonia-project/stories/blob/main/Keoma:%20Architect/Keoma%20-%20Restoration%20and%20sound%20practices.md)
