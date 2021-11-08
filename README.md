@@ -1,7 +1,7 @@
 # Source
 The Source ontology module of the [Polifonia ontology network](https://github.com/polifonia-project/ON) models concepts and relationships for representing sources of (music-related) information.
 
-![Source module diagram](https://github.com/polifonia-project/source/blob/main/source-module-diagram.png)
+![Source module diagram](https://github.com/polifonia-project/source/blob/main/source-module.png)
 
 ## Links
 The Source module is necessary to address the stories below:
