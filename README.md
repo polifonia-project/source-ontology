@@ -1,9 +1,16 @@
-# Source
-The Source ontology module of the [Polifonia ontology network](https://github.com/polifonia-project/ontology-network) models concepts and relationships for representing sources of (music-related) information.
+# Source Ontology
+The Source ontology addresses concepts and relationships for representing sources of (music-related) information.
 
-![Source module diagram](https://github.com/polifonia-project/source/blob/main/source-module.png)
+[![DOI](https://zenodo.org/badge/372536364.svg)](https://zenodo.org/badge/latestdoi/372536364)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
-## Links
+> 🔗 Ontology URI: [https://w3id.org/polifonia/ontology/source/](https://w3id.org/polifonia/ontology/source/)
+
+Source represents various sources of music-related information. These include manuscripts, textbooks, articles, interviews, reviews, comments, memoirs, etc. of different scope and format (physical, digital). The module aims to provide general support to describe information related to the creator and type of the source, the time and place when/where it was created, the context of production and usage, and the subject and goals. Although this conceptualisa- tion leans towards bibliographical sources, the module provides expressivity to indicate multimedia documents (e.g. images of scores, audio recording, video). For example, a video recording of a performance can be considered as a musical source – providing documentary evidence of a composition e.g. during an event. The module is part of the [Polifonia ontology network](https://github.com/polifonia-project/ontology-network).
+
+![Source module diagram](diagrams/source-module.png)
+
+## Related personas and stories
 The Source module is necessary to address the stories below:
 - [Carolina#1 - Sources cross analysis](https://github.com/polifonia-project/stories/blob/main/Carolina:%20Music%20Historian/Carolina%20-%20Sources%20cross%20analysis.md)
 - [Keoma#1_- Restoration and sound practices](https://github.com/polifonia-project/stories/blob/main/Keoma:%20Architect/Keoma%20-%20Restoration%20and%20sound%20practices.md)
@@ -11,3 +18,9 @@ The Source module is necessary to address the stories below:
 - [Sonia#1 - Exploration mode](https://github.com/polifonia-project/stories/blob/main/Sonia:%20Playlist%20User/Sonia%231_ExplorationMode.md)
 - [Sophia#1 - Musicians and their environment](https://github.com/polifonia-project/stories/blob/main/Sophia:%20Musicologist/Sophia%23MusiciansAndTheirEnvironment.md)
 - [Sophia#2 - Origins and form](https://github.com/polifonia-project/stories/blob/main/Sophia:%20Musicologist/Sophia%23OriginsAndForm.md)
+
+
+
+## License
+
+This work is licensed under a [Creative Commons Attribution 4.0 International License][http://creativecommons.org/licenses/by/4.0/].
